@@ -13,7 +13,7 @@ Use the binary only for its intended **TMP-610S** target. A shared TMP-600/TMP-6
 1. Disconnect measurement leads and other test connections. Ensure the device has enough charge to remain powered during the update.
 2. Record the current firmware version and any settings you need to restore.
 3. Obtain a suitable official firmware and the applicable recovery instructions from [FNIRSI](https://www.fnirsi.com/pages/manuals-firmwares) before replacing your current firmware. This repository does not contain a stock recovery image. Downgrading from a newer version has not been verified here.
-4. Download `APP_TMP-610S_V1.9.9_260716_dm40.bin` from [binary/](../binary/). Use **Download raw file** on GitHub, or extract **Code > Download ZIP**. Do not save the GitHub HTML page as a `.bin`.
+4. Download `APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin` from [binary/](../binary/). Use **Download raw file** on GitHub, or extract **Code > Download ZIP**. Do not save the GitHub HTML page as a `.bin`.
 5. Verify the file's SHA-256 checksum before connecting the device.
 
 ## Verify the Download
@@ -21,7 +21,7 @@ Use the binary only for its intended **TMP-610S** target. A shared TMP-600/TMP-6
 From the repository root in Windows PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\binary\APP_TMP-610S_V1.9.9_260716_dm40.bin'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\binary\APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin'
 ```
 
 On Linux, from `binary/`:
@@ -39,7 +39,7 @@ shasum -a 256 -c SHA256SUMS.txt
 Expected SHA-256, case-insensitive:
 
 ```text
-353418061f34ead74cc3593816be78f0f05e3571dae84a8289c722b369647f66
+5e40700dda8615a584b3a12f803e8b82cd378ff2a2e439bdde31950a18325619
 ```
 
 Expected size: **946,176 bytes**. A matching hash confirms the file matches this repository's binary; it does not verify hardware compatibility. If it differs, stop and download the file again.
@@ -50,11 +50,14 @@ Expected size: **946,176 bytes**. A matching hash confirms the file matches this
 2. Confirm that the **Firmware Upgrade** interface appears.
 3. Connect the device to the computer using a USB Type-C cable that supports data transfer.
 4. Wait for the computer to detect the device as a USB drive. Identify the device's drive before copying anything.
-5. Copy **only** `APP_TMP-610S_V1.9.9_260716_dm40.bin` into the root of that drive. Keep the supplied filename. Do not copy the ZIP, images, PDF, or entire repository.
+5. Copy **only** `APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin` into the root of that drive. Keep the supplied filename. Do not copy the ZIP, images, PDF, or entire repository.
 6. Wait for copying and any device update activity to finish. Do not disconnect the cable or interrupt power while the update is in progress. The manual gives no fixed timeout, so this guide does not prescribe one.
 7. Restart the device after completion, following the manual.
 
 ## Check After Restart
+
+For this update, also inspect the selected skin, menu, DMM, scope, and bar view. Check zero, signs, decimal placement, units, and HOLD where applicable. Preview images alone do not establish device behavior.
+
 
 Check that the instrument boots, opens its menus, and renders digits, decimal points, signs, and units legibly. Check the reported firmware version, though this visual mod is not guaranteed to display a separate DM40 version string. Validate normal operation using suitable known references before relying on measurements.
 

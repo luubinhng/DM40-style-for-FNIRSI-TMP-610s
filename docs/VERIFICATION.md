@@ -34,3 +34,13 @@ The previews reconstruct selected UI layers. Graph inputs and long reading examp
 The manifest's paths name original development inputs and outputs that are absent here. The original preview-generation instructions refer to tools that are also absent. This package is a binary distribution, not a reproducible build environment.
 
 To establish an exact gallery for this release, regenerate the previews from the distributed binary and record its hash, or supplement the supplied device photos with the tested binary hash. Device testing should record the model, hardware revision, previous firmware, installation result, and observed behavior.
+
+
+## Bar + skins update
+
+- New binary: `APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin`
+- Size: 946,176 bytes.
+- Release SHA-256: `5e40700dda8615a584b3a12f803e8b82cd378ff2a2e439bdde31950a18325619`
+- `output/PREVIEW_MANIFEST.json` output_sha256: `506439d5d226aadfe519cd811d6a57c2a9b88949df5903cd2d330abdb0330353`.
+- These hashes differ. The new gallery is a development preview, not evidence of exact release appearance or hardware operation.
+- The original output files and manifest are retained unchanged; selected PNGs are copied to `images/skins/` under shorter names.

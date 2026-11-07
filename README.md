@@ -2,7 +2,32 @@
 
 A community firmware mod for the **FNIRSI TMP-610S**, shared as a prebuilt V1.9.9 binary with DM40-style UI reference previews.
 
-[Download Firmware](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) | [Upgrade Guide](docs/UPGRADE.md) | [Tiếng Việt](README.vi.md) | [Release Notes](CHANGELOG.md)
+[Download Firmware](binary/APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin) | [Upgrade Guide](docs/UPGRADE.md) | [Tiếng Việt](README.vi.md) | [Release Notes](CHANGELOG.md)
+
+## New: Bar Display + Five Skins
+
+**The highlight of this update is the bar display mod**, accompanied by five visual skins for the TMP-610S.
+
+![Bar display across all five skins ? development preview](images/skins/bar-skins.png)
+
+| Skin | Preview palette |
+| --- | --- |
+| DM40 | Orange on dark background |
+| Matrix Green | Bright green on black |
+| Cyber Neon | Cyan on dark background |
+| Phosphor Amber | Amber on black |
+| Lab Gray | White and gray |
+
+The supplied previews cover the menu, DMM, scope, and DMM bar views. The bar preview is labeled `|value| / range` and shows the reading magnitude relative to the range. Example inputs include zero, positive and negative values, OL, and HOLD; these are synthetic display cases, not measurement tests.
+
+![Skin menu comparison](images/skins/skin-menu.png)
+![DMM skin comparison](images/skins/skin-dmm.png)
+![Scope skin comparison](images/skins/skin-scope.png)
+
+**Download:** [APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin](binary/APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin). The [previous DM40 binary](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) remains available.
+
+These images are software reconstructions from the supplied `output/`, not photographs. The preview manifest's output hash differs from the new release binary. They illustrate the design; exact correspondence and operation on hardware are not established by these images. See [verification notes](docs/VERIFICATION.md) and the [full preview index](output/INDEX.md).
+
 
 ## Overview
 
@@ -36,7 +61,7 @@ These photos document the visible interface on real hardware. The displayed valu
 | --- | --- |
 | Intended device | FNIRSI TMP-610S |
 | Version label | V1.9.9 / DM40 mod, as named in the supplied file |
-| Firmware | [`APP_TMP-610S_V1.9.9_260716_dm40.bin`](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) |
+| Firmware | [`APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin`](binary/APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin) |
 | Size | 946,176 bytes |
 | Integrity | [SHA256SUMS.txt](binary/SHA256SUMS.txt) |
 | Hardware evidence | Owner-supplied TMP-610S photos in meter and graph views; see below |

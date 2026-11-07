@@ -2,7 +2,32 @@
 
 Bản firmware mod cộng đồng dành cho **FNIRSI TMP-610S**, chia sẻ dưới dạng file `.bin` mang nhãn **V1.9.9**, kèm ảnh tham khảo giao diện theo phong cách DM40.
 
-[Tải firmware](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) | [English](README.md) | [Hướng dẫn chi tiết](docs/UPGRADE.md)
+[Tải firmware](binary/APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin) | [English](README.md) | [Hướng dẫn chi tiết](docs/UPGRADE.md)
+
+## Mới: mod hiển thị bar và 5 skin
+
+**Điểm nổi bật của bản cập nhật là mod hiển thị bar**, đi kèm bộ 5 skin cho TMP-610S: **DM40, Matrix Green, Cyber Neon, Phosphor Amber và Lab Gray**.
+
+![Bar trên 5 skin — preview phát triển](images/skins/bar-skins.png)
+
+| Skin | Màu trong preview |
+| --- | --- |
+| DM40 | Cam trên nền tối |
+| Matrix Green | Xanh lá trên nền đen |
+| Cyber Neon | Xanh cyan trên nền tối |
+| Phosphor Amber | Hổ phách trên nền đen |
+| Lab Gray | Trắng và xám |
+
+Bộ preview có menu, đồng hồ số (DMM), scope và bar của DMM. Bar được ghi `|value| / range`, biểu diễn độ lớn trị số so với thang đo. Các mẫu zero, số dương, số âm, OL và HOLD dùng dữ liệu mô phỏng để kiểm tra hiển thị.
+
+![So sánh menu](images/skins/skin-menu.png)
+![So sánh DMM](images/skins/skin-dmm.png)
+![So sánh scope](images/skins/skin-scope.png)
+
+**Tải bản mới:** [APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin](binary/APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin). Vẫn giữ [bản DM40 trước](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin).
+
+Ảnh được dựng bằng phần mềm từ `output/`, không phải ảnh chụp máy thật. Hash trong manifest khác hash binary mới; ảnh minh họa thiết kế, chưa xác nhận chính xác giao diện của file phát hành. Xem [đối chiếu](docs/VERIFICATION.md) và [toàn bộ preview](output/INDEX.md).
+
 
 ## Giới thiệu
 
@@ -37,7 +62,7 @@ Hai ảnh ghi nhận giao diện hiển thị trên phần cứng thực tế. S
 | Mục | Thông tin |
 | --- | --- |
 | Thiết bị mục tiêu | FNIRSI TMP-610S |
-| File | `APP_TMP-610S_V1.9.9_260716_dm40.bin` |
+| File | `APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin` |
 | Dung lượng | 946.176 byte |
 | Checksum | [SHA256SUMS.txt](binary/SHA256SUMS.txt) |
 | Bằng chứng máy thật | Ảnh TMP-610S do chủ dự án cung cấp ở giao diện đồng hồ kim và đồ thị |
@@ -59,13 +84,13 @@ Hướng dẫn dưới đây theo **mục 3.6**, trang in **22** / trang PDF **2
 Tại thư mục gốc repo, chạy PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\binary\APP_TMP-610S_V1.9.9_260716_dm40.bin'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\binary\APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin'
 ```
 
 Kết quả phải khớp chuỗi sau, không phân biệt chữ hoa/thường:
 
 ```text
-353418061f34ead74cc3593816be78f0f05e3571dae84a8289c722b369647f66
+5e40700dda8615a584b3a12f803e8b82cd378ff2a2e439bdde31950a18325619
 ```
 
 Checksum chỉ xác nhận đúng file được chia sẻ, không chứng minh file tương thích với phần cứng. Nếu không khớp, dừng và tải lại.
@@ -76,7 +101,7 @@ Checksum chỉ xác nhận đúng file được chia sẻ, không chứng minh f
 2. Xác nhận máy đã hiện màn hình **Firmware Upgrade**.
 3. Kết nối với máy tính bằng cáp USB-C truyền dữ liệu.
 4. Chờ máy tính nhận thiết bị như một ổ USB và xác định đúng ổ của thiết bị.
-5. Chép duy nhất file `APP_TMP-610S_V1.9.9_260716_dm40.bin` vào thư mục gốc của ổ đó. Giữ nguyên tên file; không chép ZIP, PDF hay cả thư mục repo.
+5. Chép duy nhất file `APP_TMP-610S_V1.9.9_260716_dm40-bar-allmodes.bin` vào thư mục gốc của ổ đó. Giữ nguyên tên file; không chép ZIP, PDF hay cả thư mục repo.
 6. Chờ quá trình chép và cập nhật trên thiết bị kết thúc. Không rút cáp hoặc ngắt nguồn trong lúc cập nhật.
 7. Khởi động lại sau khi hoàn tất. Kiểm tra menu, chữ số, dấu thập phân, dấu âm và đơn vị; kiểm tra chức năng đo với nguồn tham chiếu phù hợp trước khi sử dụng.
 
