@@ -1,0 +1,732 @@
+{
+  "scope": "Actual bitmap / known-layout partial-layer reconstruction, not device screenshots or whole-device equivalence",
+  "base_sha256": "cd6a3520d5914e463467675dec580ab1fe7f46fbaa66992fc2f02fb92e51422e",
+  "candidate_sha256": "1164fadb16ded5286e655ac5406ad144cd23dd65c09e0b81f97d2d9ff7d192bc",
+  "glyph_source": "Every glyph coverage mask decoded from exact image bytes; no host font substitutes in product layers",
+  "annotation_font": "Pillow default only for reviewer captions outside reconstructed layers",
+  "notes": [
+    "Black DMM graph fill retained; graph data synthetic.",
+    "H-control rectangle is an extent/color illustration; exact rounded-edge helper rasterization is not emulated.",
+    "Unknown whole-screen layers omitted; inherited colors reconstructed for dark theme only.",
+    "AA color compositing uses source RGB565 channel interpolation, not emulated TMP LCD ramp.",
+    "No hardware appearance, LCD blending, display timing or update behavior observed."
+  ],
+  "main_rectangles": {
+    "base": [
+      25,
+      103,
+      376,
+      95
+    ],
+    "refined": [
+      8,
+      103,
+      400,
+      95
+    ]
+  },
+  "unit_rectangles": {
+    "base": [
+      405,
+      170,
+      51,
+      28
+    ],
+    "refined": [
+      408,
+      165,
+      64,
+      28
+    ]
+  },
+  "home_draw_rectangle": [
+    0,
+    210,
+    480,
+    50
+  ],
+  "home_layer_bounds": [
+    100,
+    204,
+    400,
+    280
+  ],
+  "layers": [
+    {
+      "kind": "home",
+      "index": 0,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "万用表",
+          "advance": 97,
+          "ink_pixels": 1421,
+          "visible_pixels": 1421,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "万用表",
+          "advance": 51,
+          "ink_pixels": 444,
+          "visible_pixels": 444,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 1,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "示波器",
+          "advance": 99,
+          "ink_pixels": 1551,
+          "visible_pixels": 1551,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "示波器",
+          "advance": 54,
+          "ink_pixels": 519,
+          "visible_pixels": 519,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 2,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "信号源",
+          "advance": 99,
+          "ink_pixels": 1436,
+          "visible_pixels": 1436,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "信号源",
+          "advance": 54,
+          "ink_pixels": 520,
+          "visible_pixels": 520,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 3,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "设置",
+          "advance": 66,
+          "ink_pixels": 1069,
+          "visible_pixels": 1069,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "设置",
+          "advance": 36,
+          "ink_pixels": 369,
+          "visible_pixels": 369,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 4,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "Multimeter",
+          "advance": 162,
+          "ink_pixels": 2007,
+          "visible_pixels": 2007,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "Multimeter",
+          "advance": 98,
+          "ink_pixels": 659,
+          "visible_pixels": 659,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 5,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "Oscilloscope",
+          "advance": 178,
+          "ink_pixels": 2192,
+          "visible_pixels": 2192,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "Oscilloscope",
+          "advance": 115,
+          "ink_pixels": 752,
+          "visible_pixels": 752,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 6,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "Signal Generator",
+          "advance": 247,
+          "ink_pixels": 2998,
+          "visible_pixels": 2998,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "Signal Generator",
+          "advance": 159,
+          "ink_pixels": 995,
+          "visible_pixels": 995,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "home",
+      "index": 7,
+      "statistics": [
+        {
+          "font_h": 40,
+          "text": "Settings",
+          "advance": 121,
+          "ink_pixels": 1636,
+          "visible_pixels": 1636,
+          "overlap_pixels": 0
+        },
+        {
+          "font_h": 21,
+          "text": "Settings",
+          "advance": 76,
+          "ink_pixels": 507,
+          "visible_pixels": 507,
+          "overlap_pixels": 0
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "0.0000",
+      "unit": "V",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "0.0000",
+          "advance": 272,
+          "ink_pixels": 11520,
+          "visible_pixels": 11520,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 17,
+            "ink_pixels": 156,
+            "visible_pixels": 156,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "0.0000",
+          "advance": 290,
+          "ink_pixels": 10811,
+          "visible_pixels": 10811,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 20,
+            "ink_pixels": 217,
+            "visible_pixels": 217,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "-0.0000",
+      "unit": "mV",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "-0.0000",
+          "advance": 313,
+          "ink_pixels": 11664,
+          "visible_pixels": 11664,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "mV",
+            "advance": 37,
+            "ink_pixels": 307,
+            "visible_pixels": 307,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "-0.0000",
+          "advance": 321,
+          "ink_pixels": 11134,
+          "visible_pixels": 11134,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "mV",
+            "advance": 45,
+            "ink_pixels": 492,
+            "visible_pixels": 492,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "11111.1",
+      "unit": "Hz",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "11111.1",
+          "advance": 251,
+          "ink_pixels": 6972,
+          "visible_pixels": 6972,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "Hz",
+            "advance": 27,
+            "ink_pixels": 243,
+            "visible_pixels": 243,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "11111.1",
+          "advance": 344,
+          "ink_pixels": 7051,
+          "visible_pixels": 7051,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "Hz",
+            "advance": 34,
+            "ink_pixels": 408,
+            "visible_pixels": 408,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "88888.8",
+      "unit": "kHz",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "88888.8",
+          "advance": 323,
+          "ink_pixels": 15108,
+          "visible_pixels": 15108,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "kHz",
+            "advance": 41,
+            "ink_pixels": 351,
+            "visible_pixels": 351,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "88888.8",
+          "advance": 344,
+          "ink_pixels": 14161,
+          "visible_pixels": 14161,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "kHz",
+            "advance": 49,
+            "ink_pixels": 604,
+            "visible_pixels": 604,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "-88888.8",
+      "unit": "mA",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "-88888.8",
+          "advance": 364,
+          "ink_pixels": 15252,
+          "visible_pixels": 15252,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "mA",
+            "advance": 37,
+            "ink_pixels": 319,
+            "visible_pixels": 319,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "-88888.8",
+          "advance": 375,
+          "ink_pixels": 14484,
+          "visible_pixels": 14484,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "mA",
+            "advance": 45,
+            "ink_pixels": 509,
+            "visible_pixels": 509,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "-888888.8",
+      "unit": "MHz",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "-888888.8",
+          "advance": 415,
+          "ink_pixels": 17750,
+          "visible_pixels": 17750,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "MHz",
+            "advance": 46,
+            "ink_pixels": 461,
+            "visible_pixels": 461,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 54,
+          "text": "-888888.8",
+          "advance": 191,
+          "ink_pixels": 3483,
+          "visible_pixels": 3483,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "MHz",
+            "advance": 59,
+            "ink_pixels": 755,
+            "visible_pixels": 755,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "-1234567890.12",
+      "unit": "Ω",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "-1234567890.12",
+          "advance": 647,
+          "ink_pixels": 22234,
+          "visible_pixels": 17626,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "Ω",
+            "advance": 18,
+            "ink_pixels": 202,
+            "visible_pixels": 202,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 54,
+          "text": "-1234567890.12",
+          "advance": 311,
+          "ink_pixels": 4697,
+          "visible_pixels": 4697,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "Ω",
+            "advance": 19,
+            "ink_pixels": 273,
+            "visible_pixels": 273,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "88888888888888",
+      "unit": "uF",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "88888888888888",
+          "advance": 714,
+          "ink_pixels": 34972,
+          "visible_pixels": 22847,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "uF",
+            "advance": 26,
+            "ink_pixels": 231,
+            "visible_pixels": 231,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 54,
+          "text": "88888888888888",
+          "advance": 336,
+          "ink_pixels": 6734,
+          "visible_pixels": 6734,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "uF",
+            "advance": 30,
+            "ink_pixels": 341,
+            "visible_pixels": 341,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "OL",
+      "unit": "MΩ",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "OL",
+          "advance": 122,
+          "ink_pixels": 3913,
+          "visible_pixels": 3913,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "MΩ",
+            "advance": 37,
+            "ink_pixels": 420,
+            "visible_pixels": 420,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "OL",
+          "advance": 116,
+          "ink_pixels": 3737,
+          "visible_pixels": 3737,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "MΩ",
+            "advance": 44,
+            "ink_pixels": 620,
+            "visible_pixels": 620,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "PASS",
+      "unit": "V",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "PASS",
+          "advance": 227,
+          "ink_pixels": 6814,
+          "visible_pixels": 6814,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 17,
+            "ink_pixels": 156,
+            "visible_pixels": 156,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "PASS",
+          "advance": 227,
+          "ink_pixels": 6814,
+          "visible_pixels": 6814,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 20,
+            "ink_pixels": 217,
+            "visible_pixels": 217,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "main_reading",
+      "text": "FAIL",
+      "unit": "V",
+      "statistics": [
+        {
+          "font_h": 113,
+          "text": "FAIL",
+          "advance": 188,
+          "ink_pixels": 5162,
+          "visible_pixels": 5162,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 17,
+            "ink_pixels": 156,
+            "visible_pixels": 156,
+            "overlap_pixels": 0
+          }
+        },
+        {
+          "font_h": 113,
+          "text": "FAIL",
+          "advance": 187,
+          "ink_pixels": 5148,
+          "visible_pixels": 5148,
+          "overlap_pixels": 0,
+          "unit": {
+            "font_h": 28,
+            "text": "V",
+            "advance": 20,
+            "ink_pixels": 217,
+            "visible_pixels": 217,
+            "overlap_pixels": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "graph",
+      "base": {
+        "grid_rgb": [
+          45,
+          45,
+          45
+        ],
+        "trace_rgb": [
+          0,
+          152,
+          255
+        ],
+        "vertical_indices": [
+          0,
+          30
+        ],
+        "last_requested_vertical_x": 488,
+        "graph_ordinates": "synthetic normalized0..147; not measured data",
+        "clip": "actual descriptor x8..472, y56..206"
+      },
+      "refined": {
+        "grid_rgb": [
+          42,
+          52,
+          58
+        ],
+        "trace_rgb": [
+          255,
+          136,
+          0
+        ],
+        "vertical_indices": [
+          0,
+          29
+        ],
+        "last_requested_vertical_x": 472,
+        "graph_ordinates": "synthetic normalized0..147; not measured data",
+        "clip": "actual descriptor x8..472, y56..206"
+      }
+    }
+  ],
+  "files": [
+    "GLYPH_h113_c824587e.png",
+    "GLYPH_h21_a8b0edc5.png",
+    "GLYPH_h21_abd6ec78.png",
+    "GLYPH_h21_f2810fae.png",
+    "GLYPH_h21_fcc99467.png",
+    "GLYPH_h29_1edd48ba.png",
+    "GLYPH_h54_c824587e.png",
+    "GRAPH_LAYER_BEFORE_AFTER.png",
+    "HOME_LABELS_BEFORE_AFTER.png",
+    "METER_READINGS_BEFORE_AFTER.png",
+    "SEMANTIC_GLYPHS_BEFORE_AFTER.png",
+    "SOURCE_F78_VS_REFINED.png",
+    "UNITS_BEFORE_AFTER.png"
+  ],
+  "image_sha256": {
+    "GLYPH_h113_c824587e.png": "3a3377d0f859b3ab029b93519a636b0f3932d2d3f5b36675680ed1fdb9c85a88",
+    "GLYPH_h21_a8b0edc5.png": "a9901f171ea880ac5c08aa44033587944f57a4b406090d7d142cc4a0364f7a1e",
+    "GLYPH_h21_abd6ec78.png": "b9b41b43ee5eb3f38f836eecb7845533cd0c2f1302b1c921f59a96b19d72b3e7",
+    "GLYPH_h21_f2810fae.png": "2738ee0d1225a669123d330d23c72b565c829229332e08618bfd4e27e9ba8f8e",
+    "GLYPH_h21_fcc99467.png": "0a439c7cc0f9d46de36d784a3d1c10f5819732c42d0b50f890452dd4efc30145",
+    "GLYPH_h29_1edd48ba.png": "37b02898e4324fa3c1a72295aa935e5b22bc59d10ba0dc11d5ee170d3b76fa1b",
+    "GLYPH_h54_c824587e.png": "8ebdcb72bfacd7e7d558590a3a3edf759e4a936b8f6385e4e9bd7bea0409c8d6",
+    "GRAPH_LAYER_BEFORE_AFTER.png": "5e7a6cd8a18689bdb5d1d4c82c5d53dbf786a0ba800750e36b1a2032025aba26",
+    "HOME_LABELS_BEFORE_AFTER.png": "4b4c6d93976dbfbdd635f85c1fd64530b664c36ad76d1e1aec75d201163592da",
+    "METER_READINGS_BEFORE_AFTER.png": "7952f317d89371356437926ca8a0a7df61133546771b7ab949c2ce498dd3fa6c",
+    "SEMANTIC_GLYPHS_BEFORE_AFTER.png": "539cdd63cb0ff4aa4ab9d9f0b307cde43dbbf44df83ce18d58d32482e639d6d9",
+    "SOURCE_F78_VS_REFINED.png": "a749a277dfb66ea1fb671409bed3bb2128c8fead23fff946b25da13ee41da942",
+    "UNITS_BEFORE_AFTER.png": "c53a658649410c5415f3ec48b009a7c4abdf63db1778ab3ef3c2dae31506e9d2"
+  }
+}
