@@ -1,6 +1,6 @@
 # Artifact Verification
 
-Checks performed while organizing the supplied repository. No firmware was flashed and no hardware behavior was tested.
+File checks were performed while organizing the supplied repository. The project owner subsequently supplied real-device photos, reviewed below. No firmware was flashed as part of the documentation work.
 
 ## Firmware Identity
 
@@ -15,7 +15,13 @@ The distributed binary contains **946,176 bytes**. Its hash was checked before a
 
 The output and candidate hashes also differ from each other. Neither manifest identifies the distributed binary. This does not itself establish a defective binary, but prevents treating these manifests as validation of it. No hashes in the original manifests were rewritten to conceal the mismatch.
 
-## Images
+## Real-Device Photos
+
+The owner identifies `images/device-meter.jpg` and `images/device-graph.jpg` as photos of the mod running on real hardware. Both visibly show a FNIRSI TMP-610S displaying 9.27 Ω. The meter photo shows a curved scale and large orange digits; the graph photo shows an orange trace and MIN/MAX fields.
+
+This is photographic evidence of the displayed interface on a physical device. The photos do not expose the installed firmware version or binary hash, and do not constitute an accuracy, stability, or full-function test. They do not resolve the development-manifest hash mismatch above.
+
+## Development Preview Images
 
 All **13** PNG files named in `PREVIEW_MANIFEST.json` match their recorded SHA-256 hashes. This establishes image-file integrity relative to that manifest only.
 
@@ -27,4 +33,4 @@ The previews reconstruct selected UI layers. Graph inputs and long reading examp
 
 The manifest's paths name original development inputs and outputs that are absent here. The original preview-generation instructions refer to tools that are also absent. This package is a binary distribution, not a reproducible build environment.
 
-To establish an exact gallery for this release, regenerate the previews from the distributed binary and record its hash, or supply device photos with the tested binary hash. Device testing should record the model, hardware revision, previous firmware, installation result, and observed behavior.
+To establish an exact gallery for this release, regenerate the previews from the distributed binary and record its hash, or supplement the supplied device photos with the tested binary hash. Device testing should record the model, hardware revision, previous firmware, installation result, and observed behavior.

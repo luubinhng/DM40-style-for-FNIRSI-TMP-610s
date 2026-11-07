@@ -10,9 +10,27 @@ Bộ ảnh phát triển minh họa kiểu chữ số DM40 được điều ch�
 
 ![So sánh kiểu chữ DM40 và bản điều chỉnh cho TMP](images/SOURCE_F78_VS_REFINED.png)
 
-**Đây là ảnh dựng lại từng lớp giao diện từ dữ liệu firmware, không phải ảnh chụp máy thật.** Hash firmware trong các manifest khác hash file `.bin` đang chia sẻ. Vì vậy, ảnh chỉ dùng để tham khảo quá trình phát triển, chưa xác nhận chính xác giao diện của file tải xuống. Xem [đối chiếu dữ liệu](docs/VERIFICATION.md).
+**Các ảnh PNG phát triển được dựng lại từng lớp giao diện từ dữ liệu firmware.** Ảnh chụp thiết bị thật được trình bày ở mục bên dưới. Hash firmware trong các manifest khác hash file `.bin` đang chia sẻ. Vì vậy, ảnh chỉ dùng để tham khảo quá trình phát triển, chưa xác nhận chính xác giao diện của file tải xuống. Xem [đối chiếu dữ liệu](docs/VERIFICATION.md).
 
 Các ảnh “before” dùng bản nền phát triển đã mang tên `dm40-colors-fonts`, không được xác nhận là firmware gốc của FNIRSI. Những chuỗi số dài và dữ liệu đồ thị là mẫu kiểm tra hiển thị, không phải kết quả đo.
+
+## Ảnh chạy trên thiết bị thật
+
+Ảnh do chủ dự án cung cấp cho thấy bản mod chạy trên **FNIRSI TMP-610S**, với chữ số màu cam trên nền tối. Cả hai ảnh đều hiển thị **9.27 Ω**.
+
+### Giao diện đồng hồ kim
+
+![TMP-610S chạy bản mod với thang đo dạng kim và số đo 9.27 ohm màu cam](images/device-meter.jpg)
+
+Ảnh cho thấy chữ số lớn màu cam, đơn vị điện trở, thang đo dạng cung và các nút H/REL trên màn hình thiết bị.
+
+### Giao diện đồ thị
+
+![TMP-610S chạy bản mod ở giao diện đồ thị với đường màu cam và các mục MIN/MAX](images/device-graph.jpg)
+
+Ảnh cho thấy đường đồ thị màu cam, lưới, số đo hiện tại và các mục MIN/MAX trên máy thật.
+
+Hai ảnh ghi nhận giao diện hiển thị trên phần cứng thực tế. Số đo trong ảnh chưa phải kết quả kiểm định độ chính xác. Ảnh không hiển thị phiên bản firmware hoặc SHA-256 của binary đã nạp; thông tin hash khác nhau trong manifest vẫn được ghi tại [tài liệu đối chiếu](docs/VERIFICATION.md).
 
 ## File tải xuống
 
@@ -22,7 +40,7 @@ Các ảnh “before” dùng bản nền phát triển đã mang tên `dm40-col
 | File | `APP_TMP-610S_V1.9.9_260716_dm40.bin` |
 | Dung lượng | 946.176 byte |
 | Checksum | [SHA256SUMS.txt](binary/SHA256SUMS.txt) |
-| Kiểm tra máy thật | Chưa có báo cáo thử nghiệm thiết bị trong repo |
+| Bằng chứng máy thật | Ảnh TMP-610S do chủ dự án cung cấp ở giao diện đồng hồ kim và đồ thị |
 
 Trên GitHub, mở link firmware rồi chọn **Download raw file**. Hoặc chọn **Code > Download ZIP** và giải nén. Thư mục `binary/` chứa file cần nạp.
 
@@ -67,7 +85,7 @@ Nếu không vào được màn hình cập nhật, tra manual đúng phiên b�
 ## Cấu trúc repo
 
 - `binary/`: firmware và checksum SHA-256.
-- `images/`: ảnh minh họa cùng manifest phát triển gốc.
+- `images/`: ảnh chụp thiết bị thật, ảnh minh họa cùng manifest phát triển gốc.
 - `docs/`: manual, hướng dẫn nâng cấp, thông tin đối chiếu và bài đăng chia sẻ.
 - `CHANGELOG.md`: ghi chú của gói chia sẻ.
 

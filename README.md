@@ -8,9 +8,27 @@ A community firmware mod for the **FNIRSI TMP-610S**, shared as a prebuilt V1.9.
 
 This project shares a firmware mod focused on the display's visual style. The supplied development previews illustrate adapted DM40 digit shapes, unit labels, home-screen labels, status glyphs, and an orange graph trace on a dark background.
 
-**The previews are reconstructed UI layers, not photographs of a running device.** Their recorded firmware hashes differ from the distributed binary. They illustrate the development work but do not establish the exact appearance of this download. See [artifact verification](docs/VERIFICATION.md).
+**The PNG development previews reconstruct selected UI layers.** Real-device photos are shown below. Their recorded firmware hashes differ from the distributed binary. They illustrate the development work but do not establish the exact appearance of this download. See [artifact verification](docs/VERIFICATION.md).
 
 ![DM40 reference glyphs and adapted TMP glyphs, reconstructed preview](images/SOURCE_F78_VS_REFINED.png)
+
+## Running on Real Hardware
+
+Photos supplied by the project owner show the mod running on a **FNIRSI TMP-610S**. Both views display **9.27 Ω**, with orange digits on a dark background.
+
+### Analog-Style Meter View
+
+![FNIRSI TMP-610S running the mod, with an analog-style scale and orange 9.27 ohm reading](images/device-meter.jpg)
+
+The meter view shows the large orange reading, resistance unit, curved scale, and H/REL controls on the physical display.
+
+### Graph View
+
+![FNIRSI TMP-610S running the mod in graph view, with an orange trace and MIN/MAX readings](images/device-graph.jpg)
+
+The graph view shows the orange trace, grid, live reading, and MIN/MAX fields on the device.
+
+These photos document the visible interface on real hardware. The displayed values are observations from the photos, not accuracy-test results. Firmware version and binary SHA-256 are not visible in the photos; the existing manifest hash differences remain documented in [verification notes](docs/VERIFICATION.md).
 
 ## Download
 
@@ -21,7 +39,7 @@ This project shares a firmware mod focused on the display's visual style. The su
 | Firmware | [`APP_TMP-610S_V1.9.9_260716_dm40.bin`](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) |
 | Size | 946,176 bytes |
 | Integrity | [SHA256SUMS.txt](binary/SHA256SUMS.txt) |
-| Hardware validation | No device test report is included in this repository |
+| Hardware evidence | Owner-supplied TMP-610S photos in meter and graph views; see below |
 
 Open the firmware link and use GitHub's **Download raw file** button, or download the repository using **Code > Download ZIP**. Extract the ZIP before flashing. Transfer only the `.bin` file to the device.
 
@@ -62,7 +80,7 @@ Graph data are synthetic. More samples and limitations are documented in [images
 
 ```text
 binary/             Firmware binary and SHA-256 checksum
-images/             UI previews and original development manifests
+images/             Real-device photos, UI previews, and development manifests
 docs/               Upgrade guide, verification notes, sharing text, manual
 README.md           English overview
 README.vi.md        Vietnamese overview and upgrade instructions

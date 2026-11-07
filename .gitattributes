@@ -5,3 +5,5 @@
 *.bin binary
 *.png binary
 *.pdf binary
+*.jpg binary
+*.jpeg binary

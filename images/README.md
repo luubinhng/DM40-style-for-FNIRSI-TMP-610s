@@ -1,6 +1,17 @@
-# UI Reference Gallery
+# Device Photos and UI Reference Gallery
 
 [Project overview](../README.md) | [Artifact verification](../docs/VERIFICATION.md)
+
+## Real-Device Photos
+
+The project owner supplied these photos of the mod running on a FNIRSI TMP-610S:
+
+- [Meter view](device-meter.jpg): curved scale and orange 9.27 Ω reading.
+- [Graph view](device-graph.jpg): orange trace, 9.27 Ω reading, and MIN/MAX fields.
+
+The photos document the physical display. They do not display the installed binary hash or firmware version and are outside the original preview manifest.
+
+## Development Previews
 
 These supplied previews are development references. The distributed binary does **not** match the firmware hashes in either manifest. All 13 PNG hashes recorded in `PREVIEW_MANIFEST.json` were verified; the extra `MINMAX_BEFORE_AFTER.png`, `FONT_SAMPLES_BEFORE_AFTER.png`, and `GLYPHS_AFTER_h122.png` are outside that hash list.
 
