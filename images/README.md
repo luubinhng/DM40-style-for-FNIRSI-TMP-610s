@@ -1,3 +1,13 @@
+# UI Reference Gallery
+
+[Project overview](../README.md) | [Artifact verification](../docs/VERIFICATION.md)
+
+These supplied previews are development references. The distributed binary does **not** match the firmware hashes in either manifest. All 13 PNG hashes recorded in `PREVIEW_MANIFEST.json` were verified; the extra `MINMAX_BEFORE_AFTER.png`, `FONT_SAMPLES_BEFORE_AFTER.png`, and `GLYPHS_AFTER_h122.png` are outside that hash list.
+
+The original notes below are retained for provenance. Their regeneration command refers to development tools **not included in this repository**. The "before" base is a development image, not a verified stock-firmware baseline.
+
+---
+
 # Actual-byte reconstruction previews
 
 These are partial UI layers, not device screenshots or a complete TMP framebuffer capture. Run `python3 dm40-refined/make_previews.py` after building `candidate.pending` to regenerate them. The script imports the independent bitmap/layout validator, so it refuses images whose hashes or layout checks fail.

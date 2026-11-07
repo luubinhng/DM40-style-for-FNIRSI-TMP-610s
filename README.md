@@ -1,0 +1,82 @@
+# DM40 Style for FNIRSI TMP-610S
+
+A community firmware mod for the **FNIRSI TMP-610S**, shared as a prebuilt V1.9.9 binary with DM40-style UI reference previews.
+
+[Download Firmware](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) | [Upgrade Guide](docs/UPGRADE.md) | [Tiếng Việt](README.vi.md) | [Release Notes](CHANGELOG.md)
+
+## Overview
+
+This project shares a firmware mod focused on the display's visual style. The supplied development previews illustrate adapted DM40 digit shapes, unit labels, home-screen labels, status glyphs, and an orange graph trace on a dark background.
+
+**The previews are reconstructed UI layers, not photographs of a running device.** Their recorded firmware hashes differ from the distributed binary. They illustrate the development work but do not establish the exact appearance of this download. See [artifact verification](docs/VERIFICATION.md).
+
+![DM40 reference glyphs and adapted TMP glyphs, reconstructed preview](images/SOURCE_F78_VS_REFINED.png)
+
+## Download
+
+| Item | Details |
+| --- | --- |
+| Intended device | FNIRSI TMP-610S |
+| Version label | V1.9.9 / DM40 mod, as named in the supplied file |
+| Firmware | [`APP_TMP-610S_V1.9.9_260716_dm40.bin`](binary/APP_TMP-610S_V1.9.9_260716_dm40.bin) |
+| Size | 946,176 bytes |
+| Integrity | [SHA256SUMS.txt](binary/SHA256SUMS.txt) |
+| Hardware validation | No device test report is included in this repository |
+
+Open the firmware link and use GitHub's **Download raw file** button, or download the repository using **Code > Download ZIP**. Extract the ZIP before flashing. Transfer only the `.bin` file to the device.
+
+This is an unofficial mod. The shared manual covers both TMP-600 and TMP-610S; that does not establish compatibility of this binary with TMP-600, DM40, or other devices. The version label is not a claim that V1.9.9 is the latest official firmware.
+
+## Upgrade
+
+The bundled manual, section **3.6 Firmware Upgrade**, printed page **22** (PDF page **25**), describes this process:
+
+1. With the device powered off, quickly press **Power three times** to enter the firmware upgrade screen.
+2. Connect it to a computer with a USB-C **data** cable.
+3. When the device appears as a USB drive, copy the downloaded `.bin` into that drive.
+4. Wait for the transfer and update to finish, then restart the device.
+
+Read the [full upgrade guide](docs/UPGRADE.md) first for checksum verification, preparation, and troubleshooting. Bootloader acceptance and operation of this specific mod have not been established by the supplied previews.
+
+## Preview Gallery
+
+The "before" panels use the development base recorded in the manifests, which is itself named `dm40-colors-fonts`; they are not established as stock FNIRSI firmware comparisons.
+
+### Meter Digits and Units
+
+![Reconstructed meter reading and unit comparisons](images/METER_READINGS_BEFORE_AFTER.png)
+
+Long numeric examples are synthetic layout tests, not measured values or additional measurement capability.
+
+### Home Labels
+
+![Reconstructed home label comparisons](images/HOME_LABELS_BEFORE_AFTER.png)
+
+### Graph Appearance
+
+![Reconstructed graph with synthetic input](images/GRAPH_LAYER_BEFORE_AFTER.png)
+
+Graph data are synthetic. More samples and limitations are documented in [images/README.md](images/README.md).
+
+## Repository Layout
+
+```text
+binary/             Firmware binary and SHA-256 checksum
+images/             UI previews and original development manifests
+docs/               Upgrade guide, verification notes, sharing text, manual
+README.md           English overview
+README.vi.md        Vietnamese overview and upgrade instructions
+CHANGELOG.md        Notes for this packaged mod
+```
+
+This repository distributes a prebuilt binary and supporting artifacts. Build scripts and patching tools are not included, so it is not currently a reproducible source release. Original manifest paths are preserved as development metadata.
+
+## Feedback
+
+Report the device model, hardware revision if known, previous firmware, downloaded file's SHA-256, reproduction steps, and a photo of the result. Please distinguish a device observation from a reconstructed preview.
+
+## Credits
+
+FNIRSI is the device manufacturer. DM40-style reference assets and the manufacturer manual retain their respective ownership. This repository is a community project and is not presented as an official FNIRSI release. No blanket software license is assigned to the bundled firmware or third-party assets.
+
+Official resources: [TMP-610S product page](https://www.fnirsi.com/products/tmp-610s) | [Manuals and firmware](https://www.fnirsi.com/pages/manuals-firmwares).
